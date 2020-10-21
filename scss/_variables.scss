@@ -1,0 +1,21 @@
+$rosa: pink;
+$celeste: lightblue;
+$grisclaro: #D9D2D2;
+$blanco: white;
+
+$ancho: 1600px;
+$ancho2: 1600px;
+
+$palabra: BEBES; /* Mi constante */
+
+p {
+      @if $palabra == BEBES {
+             color: blue;
+      } @else if $palabra == BEBAS {
+                 color: red;
+     } @else if $palabra == ROPITA {
+                color: green;
+     } @else {
+                color: black;
+      }
+}
